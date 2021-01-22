@@ -36,6 +36,7 @@ public class ImageProcessing {
         @Cleanup
         StreamManager streamManager = StreamManager.create(controllerURI);
         streamManager.createScope(scopeName);
+        streamManager.deleteStream(scopeName, streamName);
         streamManager.createStream(scopeName, streamName, StreamConfiguration.builder().build());
 
         // Create a ByteStreamClientFactory.
