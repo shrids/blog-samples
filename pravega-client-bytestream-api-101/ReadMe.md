@@ -1,5 +1,5 @@
 # Steps to run the Sample.
-### 1. Start Pravega.
+## 1. Start Pravega.
 There are multiple ways to run Pravega and it is documented at  [Running Pravega](https://github.com/pravega/pravega/blob/master/documentation/src/docs/deployment/deployment.md).
 Below are the steps quickly spin up Pravega as a single process and in-memory.
 
@@ -12,7 +12,7 @@ You can launch a standalone mode server using the following options:
 2. From [installation package](#from-installation-package)
 3. From [Docker image](#from-docker-image)
 
-#### From Source Code
+### From Source Code
 
 Checkout the source code:
 
@@ -27,7 +27,7 @@ Build the Pravega standalone mode distribution:
 ./gradlew startStandalone
 ```
 
-#### From Installation Package
+### From Installation Package
 
 Download the Pravega release from the [GitHub Releases](https://github.com/pravega/pravega/releases).
 
@@ -42,7 +42,7 @@ Run Pravega Standalone:
 $ pravega-<version>/bin/pravega-standalone
 ```
 
-#### From Docker Image
+### From Docker Image
 
 The below command will download and run Pravega from the container image on docker hub.
 
@@ -52,7 +52,7 @@ The below command will download and run Pravega from the container image on dock
 docker run -it -e HOST_IP=<ip> -p 9090:9090 -p 12345:12345 pravega/pravega:latest standalone
 ```
 
-###2. Run the sample 
+## 2. Run the sample
 The below command can be used to run the sample via command line.
 ```
 ./gradlew run
